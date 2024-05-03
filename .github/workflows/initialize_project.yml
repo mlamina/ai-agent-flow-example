@@ -30,5 +30,6 @@ jobs:
             ${{ github.event.inputs.project-description }}
             
             1. Use the programming language and framework (if provided) to search the internet for information on how to start a project with these specifications.
-            2. Compile the information into concise, actionable instructions for starting the project, including a list of initial files that need to be created.
-            3. Create a Github issue in the repository with the compiled instructions and detailed list of files to create. Label the issue `needs-refinement`.
+            2. Compile the information into a list of initial files that need to be created.
+            3. Create a Github issue in the repository with the list of files to create, including a description of the content for each file 
+            4. Label the issue `needs-refinement`.
