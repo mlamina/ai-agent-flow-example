@@ -1,35 +1,34 @@
-<div align="center">
-<img src="https://avatars.githubusercontent.com/ml/17635?s=140&v=" width="100" alt="PR Pilot Logo">
-</div>
-<p align="center">
-  <a href="https://github.com/apps/pr-pilot-ai/installations/new"><b>Install</b></a> |
-  <a href="https://docs.pr-pilot.ai">Documentation</a> | 
-  <a href="https://www.pr-pilot.ai/blog">Blog</a> | 
-  <a href="https://www.pr-pilot.ai">Website</a>
-</p>
+# Project Name
 
-# Smart Project Starter
+This project is initialized with Typescript and React to serve as a starting point for building web applications.
 
-This project comes with **[Smart Workflows](https://github.com/PR-Pilot-AI/smart-workflows/tree/main)** that use an AI agent
-to automate Github projects in powerful ways.
+## Setup Instructions
 
-* **Plug-and-play** - Install new automations and tools with the click of a button
-* **Fully Customizable** using natural language instructions.
-* **LLM Best Practices** baked in, so you can focus on what matters
+To get started, clone this repository and run the following commands:
 
-## Using the Template
+```bash
+npm install
+npm start
+```
 
-1. Create a **[new Github project using this template](https://github.com/new?template_name=smart-project-starter&template_owner=PR-Pilot-AI)**
-2. **[Install the AI agent](https://github.com/apps/pr-pilot-ai/installations/new)** on your repository
+This will install all necessary dependencies and start the development server.
 
-## Importing Tools and Automations
+## Building the Project
 
-Open the `Actions` tab 
+To build the project for production, run:
 
-<img src="github_tabs.png" width="350" alt="Actions Tab">
+```bash
+npm run build
+```
 
-Run the **`🔄 Import Smart Workflow`** and enter the ID of the **[Smart Workflow](https://github.com/PR-Pilot-AI/smart-workflows/tree/main)** you'd like to import:
+## Running Tests
 
-![Import Workflow](github_run_workflow.png)
+To run tests, execute:
 
-A new PR will be created that contains your imported workflow and ideas for how to customize for your project's needs.
+```bash
+npm test
+```
+
+## API Interaction
+
+The project includes an OpenAPI specification (`openapi.json`) for visualizing blog posts. Refer to this file for details on the API structure and how to interact with it.
