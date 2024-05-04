@@ -4,6 +4,8 @@ name: "🛠 Help with Implementation"
 on:
   issues:
     types: [labeled]
+  pull_request:
+    types: [labeled]
     
 jobs:
   help-with-implementation:
