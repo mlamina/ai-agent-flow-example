@@ -14,8 +14,13 @@ jobs:
     steps:
       - name: Set Env Vars
         run: |
-          echo "EVENT_TYPE=${{ github.event_name == 'pull_request' ? 'pull request' : 'issue' }}" >> $GITHUB_ENV
-          echo "EVENT_ID=${{ github.event_name == 'pull_request' ? github.event.pull_request.number : github.event.issue.number }}" >> $GITHUB_ENV
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "EVENT_TYPE=pull request" >> $GITHUB_ENV
+            echo "EVENT_ID=${{ github.event.pull_request.number }}" >> $GITHUB_ENV
+          else
+            echo "EVENT_TYPE=issue" >> $GITHUB_ENV
+            echo "EVENT_ID=${{ github.event.issue.number }}" >> $GITHUB_ENV
+          fi
       - name: Assist with Implementation
         uses: PR-Pilot-AI/smart-actions/quick-task@v1
         with:
