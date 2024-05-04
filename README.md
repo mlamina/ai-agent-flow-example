@@ -1,35 +1,17 @@
-<div align="center">
-<img src="https://avatars.githubusercontent.com/ml/17635?s=140&v=" width="100" alt="PR Pilot Logo">
-</div>
-<p align="center">
-  <a href="https://github.com/apps/pr-pilot-ai/installations/new"><b>Install</b></a> |
-  <a href="https://docs.pr-pilot.ai">Documentation</a> | 
-  <a href="https://www.pr-pilot.ai/blog">Blog</a> | 
-  <a href="https://www.pr-pilot.ai">Website</a>
-</p>
+# Personal Blog Application
 
-# Smart Project Starter
+This is a personal blog application developed using Django and Python. It aims to provide a simple yet functional platform for personal blogging.
 
-This project comes with **[Smart Workflows](https://github.com/PR-Pilot-AI/smart-workflows/tree/main)** that use an AI agent
-to automate Github projects in powerful ways.
+## Setup Instructions
 
-* **Plug-and-play** - Install new automations and tools with the click of a button
-* **Fully Customizable** using natural language instructions.
-* **LLM Best Practices** baked in, so you can focus on what matters
+To set up the project, follow these steps:
 
-## Using the Template
+1. Ensure you have Python 3.12.0 and Django 5.0 installed on your system.
+2. Clone this repository to your local machine.
+3. Install the required dependencies by running `pip install -r requirements.txt`.
+4. Run `python manage.py runserver` to start the development server.
+5. Visit `http://127.0.0.1:8000/` in your web browser to view the application.
 
-1. Create a **[new Github project using this template](https://github.com/new?template_name=smart-project-starter&template_owner=PR-Pilot-AI)**
-2. **[Install the AI agent](https://github.com/apps/pr-pilot-ai/installations/new)** on your repository
+## Contributing
 
-## Importing Tools and Automations
-
-Open the `Actions` tab 
-
-<img src="github_tabs.png" width="350" alt="Actions Tab">
-
-Run the **`🔄 Import Smart Workflow`** and enter the ID of the **[Smart Workflow](https://github.com/PR-Pilot-AI/smart-workflows/tree/main)** you'd like to import:
-
-![Import Workflow](github_run_workflow.png)
-
-A new PR will be created that contains your imported workflow and ideas for how to customize for your project's needs.
+Contributions to this project are welcome. Please refer to the TODO.md for a list of upcoming features and improvements.
