@@ -27,6 +27,11 @@ jobs:
             # How to review Pull Requests
 
             When reviewing a PR, check the following:
+
+            ## Completeness
+            If the PR mentiones a Github issue that is the origin of the code changes,
+            read the issue and make sure the PR fulfills all requirements mentioned in the issue.
+            If it doesn't, add a comment to the PR with bullet points of what's missing and add the `needs-work` label to the PR.
             
             ## Code Quality
             - Code is well-documented
