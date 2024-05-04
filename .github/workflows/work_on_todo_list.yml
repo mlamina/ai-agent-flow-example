@@ -17,7 +17,10 @@ jobs:
           api-key: ${{ secrets.PR_PILOT_API_KEY }}
           agent-instructions: |
             1. Read `TODO.md`
-            2. Identify the next open item on the TODO list.
+            2. Identify the next open item on the TODO list. If there is no open item, delete the file
             3. Fulfill the identified task to the best of your abilities.
             4. Edit `TODO.md` to mark the item you worked on as checked
-            5. If all items on the TODO list are completed, delete `TODO.md`
+
+            When fulfilling the task:
+            - Make sure you have enough context by reading relevant files
+            - If files you need do not exist, write them
