@@ -32,3 +32,4 @@ jobs:
             4. Read the identified files.
             5. Write the necessary changes to the files based on the ${{ env.EVENT_TYPE }} requirements.
             6. Commit the changes with a message that includes the ${{ env.EVENT_TYPE }} ID and a brief description of the work done.
+            7. Remove the `needs-work` label from ${{ env.EVENT_TYPE }} #${{ env.EVENT_ID }}
